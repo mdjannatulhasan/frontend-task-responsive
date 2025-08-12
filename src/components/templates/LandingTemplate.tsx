@@ -20,7 +20,7 @@ const LandingTemplate: React.FC<LandingTemplateProps> = ({
             <div className="container max-w-[1018px] mx-auto px-[20px] lg:px-0 relative lg:pl-1">
                 <PhoneMockup className="lg:absolute lg:right-[-115px] lg:top-[-86px]" />
                 <div className="space-y-4 max-w-[516px] flex flex-col relative z-10">
-                    <div className="order-1 lg:order-unset text-center lg:text-left space-y-0 text-[25px] lg:text-[35px] font-urbanist font-extrabold lg:font-bold leading-[30px] lg:leading-[42px] mt-[-13px] lg:mt-0">
+                    <div className="order-1 lg:order-unset text-center lg:text-left space-y-0 text-[25px] lg:text-[35px] font-urbanist font-extrabold lg:font-bold leading-[30px] lg:leading-[42px] mt-[-2px] lg:mt-0">
                         <h1 className="text-white">
                             Want to Turn Social Media Into a Profitable Career?
                         </h1>
