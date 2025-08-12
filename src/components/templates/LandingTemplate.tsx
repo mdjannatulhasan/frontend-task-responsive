@@ -58,7 +58,7 @@ const LandingTemplate: React.FC<LandingTemplateProps> = ({
                             1-minute quiz for personalized Insights
                         </p>
                     </div>
-                    <div className="text-[#ABABAB] text-center lg:text-left space-y-[19px] lg:space-y-3 font-bigtree font-medium px-4 lg:px-0 order-2 lg:order-3 pb-[18px] lg:pb-0 pt-[6px] lg:pt-0">
+                    <div className="text-[#ABABAB] text-center lg:text-left space-y-[19px] lg:space-y-3 font-figtree font-medium px-4 lg:px-0 order-2 lg:order-3 pb-[18px] lg:pb-0 pt-[6px] lg:pt-0">
                         <p className="text-xs leading-[14px]">
                             By clicking &quot;Get Started&quot;, you agree with
                             Terms and Conditions, Privacy Policy, Subscription
