@@ -1,3 +1,80 @@
+# Atomic Design Structure
+
+This project follows Brad Frost's Atomic Design methodology, organizing components into five distinct levels:
+
+## Atoms
+
+The basic building blocks of our interface. These are the smallest functional units.
+
+**Location:** `src/components/atoms/`
+
+-   **Button.tsx** - Reusable button component with variants (primary, secondary, outline)
+-   **Logo.tsx** - Brand logo with glitch effect styling
+-   **NavItem.tsx** - Navigation Menu items
+-   **StarIcon.tsx** - Sparkle icon for benefit items
+
+## Molecules
+
+Simple groups of UI elements functioning together as a unit.
+
+**Location:** `src/components/molecules/`
+
+-   **SaleBanner.tsx** - Combines rocket icon and sale text
+-   **BenefitItem.tsx** - Combines star icon and benefit text
+-   **Navigation.tsx** - Navigation links group
+
+## Organisms
+
+Relatively complex UI components composed of groups of molecules and/or atoms.
+
+**Location:** `src/components/organisms/`
+
+-   **Header.tsx** - Combines logo and navigation
+-   **BenefitsList.tsx** - List of benefit items
+-   **PhoneMockup.tsx** - Complex phone interface with app preview
+
+## Templates
+
+Page-level objects that place components into a layout and articulate the design's underlying content structure.
+
+**Location:** `src/components/templates/`
+
+-   **LandingTemplate.tsx** - Complete landing page layout combining all organisms
+
+## Pages
+
+Specific instances of templates that show what a UI looks like with real representative content.
+
+**Location:** `src/app/page.tsx`
+
+-   **Home Page** - Uses LandingTemplate with actual content
+
+## Usage
+
+```tsx
+// Import individual components
+import { Button, Logo, Header } from '@/components';
+
+// Or import specific components
+import LandingTemplate from '@/components/templates/LandingTemplate';
+```
+
+## 📱 Responsive Breakpoints
+
+-   **Mobile:** < 640px
+-   **Tablet:** 640px - 1024px
+-   **Desktop:** > 1024px
+
+## 🎯 Key Features
+
+-   ✅ Atomic Design methodology
+-   ✅ Fully responsive design
+-   ✅ TypeScript support
+-   ✅ Tailwind CSS v4
+-   ✅ Modern React patterns
+-   ✅ Accessibility considerations
+-   ✅ Performance optimized
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -15,22 +92,3 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
